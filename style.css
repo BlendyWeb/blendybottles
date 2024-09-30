@@ -77,13 +77,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 80%;
     
 }
 
 .swiper-slide img {
     max-width: 310%;
-    max-height: 65%;
+    max-height: 85%;
     transition: all 0.9s ease;
     
     
@@ -99,7 +99,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
-    width: 100%;
+    width: 150%;
     
 }
 
@@ -125,7 +125,7 @@ body {
     display: flex;
     align-items: center;
     width: calc(50% - 5px);
-    margin-right: -20px;
+    margin-right: -15px;
 }
 
 .description i {
