@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: yellow;
+    background-color: white;
     
 }
 
@@ -20,20 +20,20 @@ body {
 }
 
 .curved-background {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 120%;
     top: 0;
     left: 0;
     z-index: 0;
     transition: background-color 0.5s ease;
-    clip-path: polygon(0% 100%, 0% 50%, 50% 45%, 100% 50%, 100% 100%); /* Adjust this to match your curve */
+    
 }
 
 .curved-line-container {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 110%;
     top: 0;
     left: 0;
     z-index: 0;
@@ -51,8 +51,8 @@ body {
 }
 
 .curved-line {
-    stroke: rgba(0, 0, 0, 0.5); /* Changed color to white with 50% opacity */
-    stroke-width: 4px; /* Increased stroke width to make the line thicker */
+    stroke: black; /* Changed color to white with 50% opacity */
+    stroke-width: 10px; /* Increased stroke width to make the line thicker */
     transition: stroke 0.5s ease; /* Added transition for smooth color changes */
 }
 
@@ -83,10 +83,8 @@ body {
 
 .swiper-slide img {
     max-width: 310%;
-    max-height: 85%;
+    max-height: 95%;
     transition: all 0.9s ease;
-    
-    
 }
 
 .swiper-slide h2 {
@@ -151,7 +149,7 @@ body {
 }
 
 .swiper-slide-prev img, .swiper-slide-next img {
-    max-width: 90%;
+    max-width: 150%;
 }
 
 
