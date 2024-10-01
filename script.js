@@ -14,6 +14,14 @@ var swiper = new Swiper(".mySwiper", {
   },
   loop: true,
   slideToClickedSlide: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    }
+   }
+  
 });
 
 // Define colors for each bottle
