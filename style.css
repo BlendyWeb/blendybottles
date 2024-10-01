@@ -52,7 +52,7 @@ body {
 
 .curved-line {
     stroke: black; /* Changed color to white with 50% opacity */
-    stroke-width: 10px; /* Increased stroke width to make the line thicker */
+    stroke-width: 5px; /* Increased stroke width to make the line thicker */
     transition: stroke 0.5s ease; /* Added transition for smooth color changes */
 }
 
@@ -83,7 +83,7 @@ body {
 
 .swiper-slide img {
     max-width: 310%;
-    max-height: 95%;
+    max-height: 100%;
     transition: all 0.9s ease;
 }
 
@@ -161,6 +161,47 @@ body {
     border-radius: 3px;
     font-weight: bold; 
 }
+
+
+
+.arrow-container {
+    position: absolute;
+    right: 5%; /* Adjust to align it near the right bottle */
+    top: 5%; /* Adjust to place it vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10; /* Make sure it's on top of other elements */
+  }
+  
+  .click-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .arrow {
+    font-size: 30px;
+    color: black;
+    animation: bounce 1s infinite; /* Adds a bouncing effect */
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+
+
+
+
+
 
 
 @media (min-width: 1024px) {
