@@ -52,6 +52,17 @@ if (img && img.alt) {
 return null;
 }
 
+// Function to hide the arrow when a bottle is clicked
+function hideArrow() {
+  const arrowContainer = document.querySelector('.arrow-container');
+  if (arrowContainer) {
+    arrowContainer.style.display = 'none'; // Hides the arrow
+  }
+}
+
+
+
+
 // Add click event listeners to slides
 swiper.slides.forEach((slide, index) => {
   slide.addEventListener('click', () => {
@@ -63,6 +74,8 @@ swiper.slides.forEach((slide, index) => {
   if (color) {
     changeBackgroundColor(color);
     }
+    // Hide the arrow after the bottle is clicked
+    hideArrow();
   });
 });
 
